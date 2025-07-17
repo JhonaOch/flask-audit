@@ -41,7 +41,7 @@ def send_audit_emails():
 
         for email in emails:
             date = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
-            link = f"http://127.0.0.1:5000/track-click/{quote(email)}"
+            link = f"flask-audit-git-main-jonnathans-projects-6d94fa5a.vercel.app/track-click/{quote(email)}"
 
             html = generate_pdf_html(email, date, link)
             
